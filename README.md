@@ -1,20 +1,18 @@
 # README
 
 simple app to detect language of input text 
-English / Arabic / Franco 
+ " English / Arabic / Franco " 
 
 simple html form code to execute python script  
-
 ------------------------------------------------------------------------------
-to install apache2 server 
+to install apache2 server :
   sudo apt-get install apache2
-  Set up CGI with Apache 
+you have to Set up CGI with Apache 
 ------------------------------------------------------------------------------
 create a file if not found 
 /etc/apache2/conf-available/cgi-enabled.conf:
 
-cgi-enabled.conf content :::: 
-
+cgi-enabled.conf content :
 <Directory "/var/www/html/cgi-enabled">
       Options +ExecCGI
       AddHandler cgi-script .cgi .py
@@ -25,13 +23,12 @@ cgi-enabled.conf content ::::
     2        Options +ExecCGI
     3:       AddHandler cgi-script .cgi .py
     4  </Directory>
-
 ------------------------------------------------------------------------------
-append this 
+append this :
 AddDefaultCharset utf-8
 to /etc/apache2/apache2.conf:
 ------------------------------------------------------------------------------
-to start/stop/restart server
+to start/stop/restart server :
 
 sudo service apache2 status
 sudo service apache2 start
@@ -46,16 +43,14 @@ sudo /etc/init.d/apache2 status
 your HTML script can be located anywhere 
 your python script should be located in 
 /usr/lib/cgi-bin/python_script_name.python
-
 ------------------------------------------------------------------------------
-to make python script executable 
+to make python script executable :
 chmod 755 python_script_name.py
 ------------------------------------------------------------------------------
-install Language detection library
+install Language detection library :
 pip install langdetect
 ------------------------------------------------------------------------------
-this tutorial may help 
+this tutorial may help :
 https://www.youtube.com/watch?v=CTvsjQi5oCM
-
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
