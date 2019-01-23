@@ -7,7 +7,8 @@ simple html form code to execute python script
 
 ------------------------------------------------------------------------------
 to install apache2 server 
-sudo apt-get install apache2
+  sudo apt-get install apache2
+  Set up CGI with Apache 
 ------------------------------------------------------------------------------
 create a file if not found 
 /etc/apache2/conf-available/cgi-enabled.conf:
@@ -57,6 +58,4 @@ this tutorial may help
 https://www.youtube.com/watch?v=CTvsjQi5oCM
 
 ------------------------------------------------------------------------------
-
-install cgi-bin
 ------------------------------------------------------------------------------
